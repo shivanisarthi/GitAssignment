@@ -14,3 +14,23 @@
  git merge
  git reset
  git remote
+
+git pull
+Git pull updates the local branch and also merge the changes from the remote repository to your working directory where updating the local repository means getting the changes 
+from a remote repository to the local repository and updating the local branches with the remote tracking branches.
+It basically integrates the new downloaded data from the remote repository into your current working directory.
+Also while using git pull there can be cases of merge conflict 
+git pull is somewhat the addition of git fetch and git merge.
+
+git push
+Git push is used to upload local repository content to a remote repository.It basically is used to publish new local commits on a remote server.
+Some of the important options for git push are
+--all
+--tags
+--delete
+--u
+where,
+all: pushes all local branches
+tags: pushes all the local tags
+delete: deletes the specified branch
+u: creates an upstream tracking connection
