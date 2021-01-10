@@ -34,3 +34,7 @@ all: pushes all local branches
 tags: pushes all the local tags
 delete: deletes the specified branch
 u: creates an upstream tracking connection
+git pull:-
+If you make a change in a repository, git pull can allow others to view the changes. 
+It is used to acknowledge the change that you've made to the repository that you're working on. 
+Also called a target repository.
