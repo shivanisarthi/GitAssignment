@@ -38,3 +38,5 @@ git pull:-
 If you make a change in a repository, git pull can allow others to view the changes. 
 It is used to acknowledge the change that you've made to the repository that you're working on. 
 Also called a target repository.
+git push:-
+The git push command is used to transfer or push the commit, which is made on a local branch in your computer to a remote repository like GitHub
