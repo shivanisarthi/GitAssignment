@@ -15,14 +15,36 @@
  git reset
  git remote
 
-git pull
+Git pull:-
+
 Git pull updates the local branch and also merge the changes from the remote repository to your working directory where updating the local repository means getting the changes 
 from a remote repository to the local repository and updating the local branches with the remote tracking branches.
 It basically integrates the new downloaded data from the remote repository into your current working directory.
 Also while using git pull there can be cases of merge conflict 
 git pull is somewhat the addition of git fetch and git merge.
 
-git push
+Git Pull Examples:-
+
+The following examples demonstrate how to use git pull in common scenarios:
+git pull
+Executing the default invocation of git pull will is equivalent to git fetch origin HEAD and git merge HEAD where HEAD is ref pointing to the current branch.
+
+Git pull on remotes:-
+git checkout new_feature
+git pull <remote repo>
+This example first performs a checkout and switches to the branch. Following that, the git pull is executed with being passed. This will implicitly pull down the newfeature branch from . Once the download is complete it will initiate a git merge.
+
+Git pull rebase instead of merge:-
+The following example demonstrates how to synchronize with the central repository's master branch using a rebase:
+
+git checkout master
+git pull --rebase origin
+This simply moves your local changes onto the top of what everybody else has already contributed.
+
+
+
+Git push:-
+
 Git push is used to upload local repository content to a remote repository.It basically is used to publish new local commits on a remote server.
 Some of the important options for git push are
 --all
@@ -39,4 +61,15 @@ If you make a change in a repository, git pull can allow others to view the chan
 It is used to acknowledge the change that you've made to the repository that you're working on. 
 Also called a target repository.
 git push:-
-The git push command is used to transfer or push the commit, which is made on a local branch in your computer to a remote repository like GitHub
+The git push command is used to transfer or push the commit, which is made on a local branch in your computer to a remote repository like GitHub.
+
+
+Git push example:-
+
+The following example describes one of the standard methods for publishing local contributions to the central repository. First, it makes sure your local master is up-to-date by fetching the central repository’s copy and rebasing your changes on top of them. The interactive rebase is also a good opportunity to clean up your commits before sharing them. Then, the git push command sends all of the commits on your local master to the central repository.
+
+git checkout master
+git fetch origin master
+git rebase -i origin/master
+# Squash commits, fix up commit messages etc.
+git push origin master
