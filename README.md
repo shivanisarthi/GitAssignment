@@ -1,7 +1,7 @@
 # Group 8 Assignment: Push & Pull 
 
 
-# Why git pull is done before git push?
+## Why git pull is done before git push?
 
 As on a particular project, multiple persons/colleagues work at the same time. So, doing pull before push, it will ensure that your local copy of repository will be sync with the remote repository. 
 
