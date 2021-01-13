@@ -46,7 +46,7 @@ This simply moves your local changes onto the top of what everybody else has alr
 Git push:-
 
 Git push is used to upload local repository content to a remote repository.It basically is used to publish new local commits on a remote server.
-Some of the important options for git push are
+Some of the important options for git push are:-
 --all
 --tags
 --delete
@@ -73,3 +73,17 @@ git fetch origin master
 git rebase -i origin/master
 # Squash commits, fix up commit messages etc.
 git push origin master
+
+
+Git push usage
+git push <remote> <branch>
+Push the specified branch to , along with all of the necessary commits and internal objects. This creates a local branch in the destination repository. To prevent you from overwriting commits, Git won’t let you push when it results in a non-fast-forward merge in the destination repository.
+
+git push <remote> --force
+Same as the above command, but force the push even if it results in a non-fast-forward merge. Do not use the --force flag unless you’re absolutely sure you know what you’re doing.
+
+git push <remote> --all
+Push all of your local branches to the specified remote.
+
+git push <remote> --tags
+Tags are not automatically pushed when you push a branch or use the --all option. The --tags flag sends all of your local tags to the remote repository.
