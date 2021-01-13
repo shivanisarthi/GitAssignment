@@ -15,6 +15,7 @@
  git reset
  git remote
 
+
 Git pull:-
 
 Git pull updates the local branch and also merge the changes from the remote repository to your working directory where updating the local repository means getting the changes 
@@ -45,7 +46,7 @@ This simply moves your local changes onto the top of what everybody else has alr
 
 Git push:-
 
-Git push is used to upload local repository content to a remote repository.It basically is used to publish new local commits on a remote server.
+Git push is used to upload local repository content to a remote repository.It basically is used to publish new local commits on a remote server.After a local repository has been modified a push is executed to share the modifications with remote team me
 Some of the important options for git push are:-
 --all
 --tags
@@ -75,7 +76,8 @@ git rebase -i origin/master
 git push origin master
 
 
-Git push usage
+Git push usage:-
+
 git push <remote> <branch>
 Push the specified branch to , along with all of the necessary commits and internal objects. This creates a local branch in the destination repository. To prevent you from overwriting commits, Git won’t let you push when it results in a non-fast-forward merge in the destination repository.
 
