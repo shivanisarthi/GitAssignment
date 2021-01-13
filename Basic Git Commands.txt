@@ -15,6 +15,7 @@
  git reset
  git remote
 
+
 Git pull:-
 
 Git pull updates the local branch and also merge the changes from the remote repository to your working directory where updating the local repository means getting the changes 
