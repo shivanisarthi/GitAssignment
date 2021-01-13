@@ -46,7 +46,7 @@ This simply moves your local changes onto the top of what everybody else has alr
 
 Git push:-
 
-Git push is used to upload local repository content to a remote repository.It basically is used to publish new local commits on a remote server.
+Git push is used to upload local repository content to a remote repository.It basically is used to publish new local commits on a remote server.After a local repository has been modified a push is executed to share the modifications with remote team me
 Some of the important options for git push are:-
 --all
 --tags
